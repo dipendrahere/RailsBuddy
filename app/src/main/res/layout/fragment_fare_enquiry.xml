@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context="com.example.dipendra.railbuddy.fragments.FareEnquiry"
+    android:orientation="vertical">
+
+    <EditText
+        android:maxLength="5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Train No."
+        android:layout_marginTop="24dp"
+        android:id="@+id/trainNoFareEnquiry"
+        android:inputType="number" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="From (Station Code)"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:id="@+id/fromFareEnquiry"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="To (Station Code)"
+        android:ems="10"
+        android:layout_marginTop="16dp"
+        android:id="@+id/toFareEnquiry"
+        android:layout_below="@+id/fromFareEnquiry"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Start Date(yyyy/mm/dd)"
+        android:ems="10"
+        android:editable="false"
+        android:id="@+id/dateFareEnquiry"
+        android:layout_marginTop="18dp"
+        android:selectAllOnFocus="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:cursorVisible="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_action_name"
+        android:id="@+id/FareEnquiryCalender"
+        android:layout_alignBottom="@+id/dateFareEnquiry"
+        android:layout_toRightOf="@+id/dateFareEnquiry"
+        android:layout_toEndOf="@+id/dateFareEnquiry" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp">
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerfare"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <Button
+        android:text="Fetch Fare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/fetchfare"
+        android:layout_alignParentTop="true" />
+
+</LinearLayout>

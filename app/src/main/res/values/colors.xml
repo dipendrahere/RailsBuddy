@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64a19</color>
+    <color name="colorAccent">#FFc107</color>
+
+    <color name="primaryTextColor">#212121</color>
+    <color name="secondaryTextColor">#757575</color>
+    <color name="xx">#FFF8E1</color>
+    <color name="livegreen">#AED581</color>
+    <color name="livered">#EF9A9A</color>
+    <color name="liveyellow">#FFF59D</color>
+    <color name = "textColor">#FFFFFF</color>
+    <color name="trainName">#e8ffab6f</color>
+    <color name="textrred">#C91C1C</color>
+    <color name="textgreen">#65f473</color>
+    <color name="daysColor">#ff875c</color>
+    <color name="runningDay">#65f473</color>
+    <color name="odd">#fcf5f5</color>
+    <color name="even">#f7f2e5</color>
+</resources>

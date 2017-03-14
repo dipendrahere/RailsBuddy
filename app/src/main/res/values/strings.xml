@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">RailBuddy</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="apikey">1d1hzy4p</string>
+    <string name="rs">\u20B9</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navText">Rail Buddy</string>
+    <string name="srno">Sr.</string>
+    <string name="stcode">St. Code</string>
+    <string name="stname">St. Name</string>
+    <string name="scharr">Sch Arr</string>
+    <string name="schdep">Sch Dep</string>
+    <string name="day">Day</string>
+    <string name="distance">Dist.\nkms</string>
+</resources>

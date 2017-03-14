@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.dipendra.railbuddy">
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/abc"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".features.trainsBetweenStations"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="Trains Between Stations"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".features.train_between_stations_list"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="Trains Between Stations"
+            android:launchMode="singleTop"
+            android:parentActivityName=".features.trainsBetweenStations"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".features.trainsBetweenStations" />
+        </activity>
+        <activity
+            android:name=".features.TrainRoute"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="Trains Route"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".features.trainRouteList"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="Trains Route"
+            android:launchMode="singleTop"
+            android:parentActivityName=".features.TrainRoute"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".features.TrainRoute" />
+        </activity>
+        <activity android:name=".LiveStatusActivity">
+
+        </activity>
+    </application>
+
+</manifest>

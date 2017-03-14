@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dipendra.railbuddy.fragments.LiveStatus">
+
+
+    <Button
+        android:text="Get Live Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fetchlivestatus"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="187dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="5"
+        android:hint="Train Number"
+        android:ems="10"
+        android:layout_marginTop="49dp"
+        android:id="@+id/trainNoLiveStatus"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Start Date(yyyy/mm/dd)"
+        android:ems="10"
+        android:editable="false"
+        android:id="@+id/dateFareEnquiry"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/trainNoLiveStatus"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:selectAllOnFocus="false"
+        android:layout_alignRight="@+id/fetchlivestatus"
+        android:layout_alignEnd="@+id/fetchlivestatus"
+        android:enabled="false"
+        android:focusable="false"
+        android:cursorVisible="false" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:background="@drawable/ic_action_name"
+        android:id="@+id/LiveStatusCalender"
+        android:layout_alignBottom="@+id/dateFareEnquiry"
+        android:layout_toRightOf="@+id/dateFareEnquiry"
+        android:layout_toEndOf="@+id/dateFareEnquiry" />
+
+
+</RelativeLayout>
